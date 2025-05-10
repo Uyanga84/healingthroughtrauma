@@ -7,6 +7,11 @@
   <title>Bayandalai Counseling | Trauma-Informed Therapy</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    img.soft-fade {
+      mask-image: linear-gradient(to right, transparent 0%, black 20%, black 80%, transparent 100%);
+      -webkit-mask-image: linear-gradient(to right, transparent 0%, black 20%, black 80%, transparent 100%);
+    }
+
     body {
       font-family: 'Open Sans', sans-serif;
       margin: 0;
@@ -88,28 +93,61 @@
       background-color: #eef3f5;
       border-left: 4px solid #2c3e50;
     }
+      html {
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    nav a {
+      margin: 10px;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+      nav a {
+        margin: 8px 0;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
-  <div style="font-family: 'Rastanty Cortez', cursive, sans-serif; font-size: 36px; color: black; margin-bottom: 10px;">Bayandalai Counseling</div>
+  <div style="display: flex; flex-direction: column; align-items: center;">
+  <img src="logo-bayandalai.png" alt="Bayandalai Counseling Logo" class="soft-fade" style="width: 120px; height: auto; margin-bottom: 10px; border-radius: 0; border: none; box-shadow: none; mask-image: linear-gradient(to right, transparent 0%, black 20%, black 80%, transparent 100%); -webkit-mask-image: linear-gradient(to right, transparent 0%, black 20%, black 80%, transparent 100%);">
+  <div style="font-family: 'Rastanty Cortez', cursive; font-size: 36px; color: black;">Bayandalai Counseling</div>
+</div>
   <div style="font-size: 16px; color: #2c3e50; font-style: italic;">Rooted in resilience. Rising in self-leadership.</div>
   <h1>You Belong Here. All Parts of You.</h1>
   <p>Between cultures, beneath pain, and beyond survival—there’s a deeper you waiting to be seen, heard, and healed.</p>
-  <nav style="margin-top: 30px;">
-    <a href="#" style="margin: 0 15px; color: #2c3e50; text-decoration: none; font-weight: bold;">Home</a>
-    <a href="#" style="margin: 0 15px; color: #2c3e50; text-decoration: none; font-weight: bold;">About</a>
-    <a href="#" style="margin: 0 15px; color: #2c3e50; text-decoration: none; font-weight: bold;">Services</a>
-    <a href="#" style="margin: 0 15px; color: #2c3e50; text-decoration: none; font-weight: bold;">Podcast</a>
-    <a href="#" style="margin: 0 15px; color: #2c3e50; text-decoration: none; font-weight: bold;">Contact</a>
-  </nav>
+  <a href="#group-offerings" style="margin: 0 15px; color: #2c3e50; text-decoration: none; font-weight: bold;">Groups</a>
 </header>
 
-  <section>
+  <section id="home">
     <h2>Welcome to Bayandalai Counseling</h2>
     <p>I’m Dr. Uyanga Bayandalai, a trauma-informed therapist rooted in Internal Family Systems (IFS), EMDR, and somatic approaches. I specialize in helping women—especially those carrying complex trauma, cultural displacement, or burnout—reconnect with their inner clarity, compassion, and leadership.</p>
     <p>Healing through trauma isn’t about erasing your past. It’s about reclaiming your story, honoring your resilience, and coming home to yourself.</p>
   </section>
+
+  
+  <section id="group-offerings">
+    <h2>Group Offerings</h2>
+    <p>I offer a 6-week online group for women focused on cultivating self-leadership using the Internal Family Systems (IFS) model. This group is ideal for women seeking connection, emotional clarity, and inner balance in a supportive and safe environment.</p>
+    <ul>
+      <li><strong>Format:</strong> Virtual sessions, 2 hours each week</li>
+      <li><strong>Who it’s for:</strong> Women navigating trauma, people-pleasing, cultural identity, and emotional overwhelm</li>
+      <li><strong>Approach:</strong> IFS-based with mindfulness, writing prompts, and experiential exercises</li>
+    </ul>
+    <p>If you're interested in joining the next cohort, please contact me directly to learn more or reserve your spot.</p>
+  </section>
+
+ 
 
   <section>
     <h2>How I Work</h2>
@@ -122,6 +160,7 @@
     <p>All parts of you are welcome in this space.</p>
   </section>
 
+   
 
   <section>
     <h2>Let’s Connect</h2>
@@ -138,9 +177,25 @@
   <section>
     <h2>Podcast & Profile</h2>
     <p>Listen to my podcast <strong><a href="#">iframe style="border-radius:12px" src="https://open:spotify.com/embed/episode/episode/0c07vBGh0SRJUY21qAgMBV?utm_source=generator" width="100%" height=352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></a></strong> where I explore self-leadership, inner healing, and real-life stories of transformation.</p>
+ 
+      
+  <p style="margin-top: 20px;">Or listen on Apple Podcasts:</p>
+  <iframe allow="autoplay *; encrypted-media *; fullscreen *" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" src="https://embed.podcasts.apple.com/us/podcast/healing-through-trauma/id1735749225"></iframe>
+  <p style="margin-top: 20px;">Or listen on Google Podcasts:</p>
+  <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkLnBvZGJlYW4uY29tL2hlYWxpbmd0aHJvdWdodHJhdW1hL2ZlZWQueG1s" target="_blank" rel="noopener noreferrer">Healing Through Trauma on Google Podcasts</a>
+ <p style="margin-top: 20px;">You can also find me on
+<section id="subscribe">
+    <h2>Stay Connected</h2>
+    <p>Subscribe to receive updates on new podcast episodes, blog posts, and group offerings.</p>
+    <form class="contact-form">
+      <input type="email" placeholder="Your Email Address" required>
+      <button type="submit">Subscribe</button>
+    </form>
     <p>You can also find me on <a href="#">Psychology Today</a> to learn more about my services and availability.</p>
   </section>
-
+  <a href="https://www.linkedin.com/in/uyangabayandalai" target="_blank" style="margin: 0 10px; color: #2c3e50; font-weight: bold; text-decoration: none;">LinkedIn</a>
+    </div>
+  </section>
   <footer>
     <p>&copy; 2025 Bayandalai Counseling | Healing Through Trauma</p>
   </footer>
